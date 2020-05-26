@@ -10,3 +10,4 @@ To evaluate the performance we performed a baseline test at the beginning of the
 ## Learning
 
 ![Learning](learning_multi_ddpg.png)
+![Learning](tennis_learning_hits.png)
