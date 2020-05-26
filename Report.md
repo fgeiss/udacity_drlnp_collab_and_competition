@@ -5,7 +5,7 @@ To evaluate the performance we performed a baseline test at the beginning of the
 
 ![Baseline Tennis](tennis_baseline.png)
 
-
+## Algorithm
 
 ## Learning
 
