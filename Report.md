@@ -12,7 +12,7 @@ We implemented a Multi Agent Deep Deterministic Policy Gradient (MADDP) algorith
 
 ![Diagram](maddpg.png)
 
-This core part is implemented in the classes SingleAgent and MultiAgent. The actor and critic networks for both agents are identical, respectively and consist of two hidden layers with 100 neurons.
+This core part is implemented in the classes SingleAgent and MultiAgent. The actor and critic networks for both agents are identical, respectively and consist of two hidden layers with 100 neurons. The architecture is identical to the one used in the [preceeding project](https://github.com/fgeiss/udacity_drlnp_continuous_control/blob/master/Report.md#actor-network-architecture).
 
 ### Hyperparameters
 
