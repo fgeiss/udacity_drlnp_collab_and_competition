@@ -40,3 +40,9 @@ The goal of a score larger than 0.5 was achieved after approx. 3600 episodes. Du
 With the trained agents we performed the baseline experiment of 100 episodes again. The results are shown below.
 
 ![Trained_Agents](tennis_solved.png)
+
+## Ideas for Future Work
+Overall the agents performance seems to correlate with what seemingly is a "single trick", namely to play back the ball over the net. Once this is robustly learned the score increases significantly since this trick "only" needs to be repeated within an episode to achieve the maximum possible score. Thus, the following points are in order:
+- Analysis/Classification of the situations where the ball was lost and boosting of successful similar situations where the ball was hit
+- Varation of hyperparameters, in part. to reduce the learning time
+- Variation of network architecture possible also assymetric arcitectures 
