@@ -19,7 +19,7 @@ This core part is implemented in the classes SingleAgent and MultiAgent. The act
 | Hyperparameter       | Value   |
 |----------------------|---------|
 | BUFFER_SIZE          | 1000000 |
-| BATCH_SIZE           | 256     | 
+| BATCH_SIZE           | 512     | 
 | GAMMA                | 0.99    |       
 | TAU                  | 1e-3    |         
 | Learning Rate Actor  | 1e-3    |     
