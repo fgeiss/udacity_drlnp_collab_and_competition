@@ -37,6 +37,8 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 2. Place the file in the GitHub repository and unzip (or decompress) the file. 
 
+3. Install the required python packages: hiddenlayer, torch, tensorflow, unityagents. For a complete list of installed packages see 'requirements.txt'. To successfully install unityagents package the author used the anaconda distribution. 
+
 ### Instructions
 
 Follow the incstructions in 'Tennis.ipynb' to train and evaluate the agent.
