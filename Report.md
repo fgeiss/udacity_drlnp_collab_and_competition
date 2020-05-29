@@ -14,8 +14,23 @@ We implemented a Multi Agent Deep Deterministic Policy Gradient (MADDP) algorith
 
 This core part is implemented in the classes SingleAgent and MultiAgent. The actor and critic networks for both agents are identical, respectively and consist of two hidden layers with 100 neurons.
 
+### Hyperparameters
 
-### Hyperparameter
+| Hyperparameter       | Value   |
+|----------------------|---------|
+| BUFFER_SIZE          | 1000000 |
+| BATCH_SIZE           | 256     | 
+| GAMMA                | 0.99    |       
+| TAU                  | 1e-3    |         
+| Learning Rate Actor  | 1e-3    |     
+| Learning Rate Critic | 1e-3    |    
+| WEIGHT_DECAY         | 0.0     | 
+| EPSILON_START        | 1.0     |
+| EPSILON_DECAY        | 0.9995  |
+| EPSILON_END          | 0.00001 |
+| LEARN_EVERY          | 20      |
+| LEARN_TIMES          | 10      |
+| PRIO_ALPHA           | 0.1     |
 
 ## Results
 The goal of a score larger than 0.5 was achieved after approx. 3600 episodes. Due to the non-stationarity of the setup the average score over episodes does not follow a continuously increasing curve but rather stays almost constant zero for the first 1500 episodes end then increases significantly to approx. 0.1. At this point the players learned to successfully hit the first ball of the game. After approx. 3400 episodes there is another significant increment that reflect the point at which the agents learned to hit back balls from the other agents.
