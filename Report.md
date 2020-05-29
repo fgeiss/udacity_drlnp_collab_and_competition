@@ -65,7 +65,7 @@ Further ideas are:
 - Distributed training to improve the actual learning speed
 - The movement of the agents is partly not very efficient and looks sometimes quite gawky. Introducing a penalty on high velocities and movements in general could help to streamline the reacting and hitting on incoming balls and in the course of this also improve the agents performance
 
-Further (code) improvements:
+Further (code) improvements to be taken up:
 - make hyperparameters specific for every agent and more easily readible e.g. through a json file
 - 
 
