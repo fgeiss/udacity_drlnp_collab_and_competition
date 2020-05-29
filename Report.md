@@ -67,5 +67,5 @@ Further ideas are:
 
 Further (code) improvements to be taken up:
 - make hyperparameters specific for every agent and more easily readible e.g. through a json file
-- 
+- the observation vectors of the two agents seem to have redundant entries, i.e. entries that are either identical or only differ in sign. This can be utilized to streamline the arcitecture of the critic network.
 
