@@ -40,3 +40,8 @@ The environment is considered solved, when the average (over 100 episodes) of th
 ### Instructions
 
 Follow the incstructions in 'Tennis.ipynb' to train and evaluate the agent.
+
+### Results
+
+Results are documented in the [project report](report.md).
+
