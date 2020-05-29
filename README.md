@@ -43,5 +43,5 @@ Follow the incstructions in 'Tennis.ipynb' to train and evaluate the agent.
 
 ### Results
 
-Results are documented in the [project report](report.md).
+Results are documented in the [project report](Report.md).
 
