@@ -7,13 +7,26 @@ To be able to evaluate the performance of a trained agent we performed a baselin
 
 ## Learning Algorithm
 
-### Algorithm and Network Structures
+### Algorithm
 We implemented a Multi Agent Deep Deterministic Policy Gradient (MADDP) algorithm. This algorithm is described in detail in [this landmark paper](https://arxiv.org/abs/1706.02275). Key idea is the utilization of multiple actor-critic agents, in our case 2, where the critic networks are centralized, i.e. they take as inputs the actions, observations of all agents as well as the reward of the particular agent to approximate the expected value of total reward for the respective agent. The actor network takes only the observation of the respective agent as input to approximate the policy of the actor. Training is realized through TD-learning of actors and critics from batches of random samples of a replay buffer that is continuously updated with the latest 1000000 training samples.
 
 ![Diagram](maddpg.png)
 
-This core part is implemented in the classes SingleAgent and MultiAgent. The actor and critic networks for both agents are identical, respectively and consist of two hidden layers with 100 neurons. The architecture is identical to the one used in the [preceeding project](https://github.com/fgeiss/udacity_drlnp_continuous_control/blob/master/Report.md#actor-network-architecture).
+This core part is implemented in the classes SingleAgent and MultiAgent.
 
+### Actor Network Architecture
+The actor network is a fully connected network with input layer the observation size 24 then followed by two layers of size 100 each and then followed by the output layer of the action space size 2. The input layer and the hidden layers are followed by a batch normalization and a relu-function, the output layer is mapped to the valid action range by a tanh-function.
+
+The full network architecture details are vizualized below with an assumed batch size of 512:
+
+![Actor Network](actor_graph.png)
+
+### Critic Network Architecture
+The critic network is a fully connected network with two input layers: The first input layer takes the full state vector, i.e. the observations of both agentss, to a fully connected layer with 100 nodes followed by a batch normalization and a relu-function. The result is concatenated with the action vector of boh agents and forms the input to a fully connected layer with 100 nodes. This layer is followed by a relu function 
+
+The full network architecture details are vizualized below with an assumed batch size of 512:
+
+![Critic_Network](critic_graph.png)
 ### Hyperparameters
 
 | Hyperparameter       | Value   |
