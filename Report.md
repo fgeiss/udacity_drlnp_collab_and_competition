@@ -47,5 +47,6 @@ With the trained agents we performed the baseline experiment of 100 episodes aga
 Further ideas are:
 - Varation of hyperparameters, in part. to reduce the learning time
 - Variation of network architecture possible also assymetric arcitectures
+- Distributed training to improve the actual learning speed
 - The movement of the agents is partly not very efficient and looks sometimes quite gawky. Introducing a penalty on high velocities and movements in general could help to streamline the reacting and hitting on incoming balls and in the course of this also improve the agents performance
 
