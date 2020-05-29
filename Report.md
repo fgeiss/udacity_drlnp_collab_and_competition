@@ -8,7 +8,7 @@ To be able to evaluate the performance of a trained agent we performed a baselin
 ## Learning Algorithm
 
 ### Algorithm and Network Structures
-We implemented a Multi Agent Deep Deterministic Policy Gradient (MADDP) algorithm. This algorithm is described in detail in [this landmark paper](https://arxiv.org/abs/1706.02275). Key idea is the utilization of multiple actor-critic agents, in our case 2, where the critic networks are centralized, i.e. they take as inputs the actions, observations of all agents as well as the reward of the particular agent to approximate the expected value of total reward for the respective agent. The actor network takes only the observation of the respective agent as input to approximate the policy of the actor. Training happens through TD-learning from samples of a replay buffer.
+We implemented a Multi Agent Deep Deterministic Policy Gradient (MADDP) algorithm. This algorithm is described in detail in [this landmark paper](https://arxiv.org/abs/1706.02275). Key idea is the utilization of multiple actor-critic agents, in our case 2, where the critic networks are centralized, i.e. they take as inputs the actions, observations of all agents as well as the reward of the particular agent to approximate the expected value of total reward for the respective agent. The actor network takes only the observation of the respective agent as input to approximate the policy of the actor. Training is realized through TD-learning of actors and critics from random samples of a replay buffer that is continuously updated with the latest 1000000 training samples.
 
 ![Diagram](maddpg.png)
 
