@@ -15,7 +15,7 @@ This core part is implemented in the classes SingleAgent and MultiAgent. The act
 
 ## Learning
 
-![Learning](learning_multi_ddpg.png)
+The goal of a score larger than 0.5 was achieved after approx. 3600 episodes. Due to the non-stationarity of the setup the average score over episodes does not follow a continuously increasing curve but rather stays almost constant zero for the first 1500 episodes end then increases significantly to approx. 0.1. At this point the players learned to successfully hit the first ball of the game. After approx. 3400 episodes there is another significant increment that reflect the point at which the agents learned to hit back balls from the other agents.
 
 ![Learning](tennis_learning_hits.png)
 
