@@ -50,7 +50,7 @@ more-itertools==7.1.0
 nbconvert==5.5.0
 nbformat==4.4.0
 networkx==2.4
-notebook==5.7.8
+notebook==6.1.5
 numpy==1.14.5
 opencv-python==4.2.0.34
 pandas==1.0.3
